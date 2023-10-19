@@ -1,14 +1,10 @@
 public class Item
 {
-    private string _name;
-    private int _weight;
+    public string name {get; private set;}
+    public int weight {get; private set;}
 
     public Item(string name, int weight) {
-        this._name = name;
-        this._weight = weight;
-    }
-    
-    public int GetWeight() {
-        return _weight;
+        this.name = name;
+        this.weight = weight;
     }
 }
